@@ -1,4 +1,4 @@
-```markdown
+
 # 🤖 Social Intelligence in Agents
 
 A framework combining Tree of Thoughts (ToT) and Reflexion architectures to create autonomous AI agents capable of thoughtful social interaction and learning from experiences.
@@ -34,4 +34,4 @@ result = agent.think_and_act(situation, k=5)  # Generate 5 possible approaches
 
 - [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601)
 - [Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366)
-```
+
