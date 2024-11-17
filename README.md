@@ -28,7 +28,7 @@ Agents can:
 # Generate social interaction
 situation = "Meeting a new person at the cafe"
 result = agent.think_and_act(situation, k=5)  # Generate 5 possible approaches
-```
+
 
 ## 🔗 References
 
