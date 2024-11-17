@@ -1,5 +1,5 @@
 
-# 🤖 Social Intelligence in Agents
+# 🤖 Social Intelligence in Agents (WIP)
 
 A framework combining Tree of Thoughts (ToT) and Reflexion architectures to create autonomous AI agents capable of thoughtful social interaction and learning from experiences.
 
