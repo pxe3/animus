@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: animus
+Version: 0.1
+Summary: A social simulation framework using LLMs
+Author: Your Name
+Requires-Python: >=3.8
+Requires-Dist: torch
+Requires-Dist: transformers
