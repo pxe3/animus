@@ -70,7 +70,7 @@ def test_basic_social_scenario():
         print(f"- {effect}")
 
     print("\n=== DECISION TREE SUMMARY ===")
-    print("Initial Situation:")
+    print("Initial Situation: " + situation)
     print("└── Reasoning:", thought_path.reasoning.replace('\n', '\n    '))
     print("    └── Chosen Action:", thought_path.action.replace('\n', '\n        '))
     print("        └── Expected Next Steps:")
@@ -85,22 +85,21 @@ def test_basic_social_scenario():
 def test_complex_social_scenario():
     actor = ActorModel()
     
-    # Test data
     situation = """
-    You're at a friend's dinner party. Your close friend Alex just made a controversial 
+    You're at a friend's dinner party. Your close friend Jamie just made a controversial 
     political comment that's created visible tension. Some guests seem offended, 
     others are awkwardly quiet. The host, Sam, looks uncomfortable.
     """
     
     context = """
-    You've known Alex for years and usually enjoy their company.
+    You've known Jamie for years and usually enjoy their company.
     You disagree with their political views but value the friendship.
     Sam worked hard to bring this diverse group together.
     Previous dinner parties have been enjoyable and drama-free.
     """
     
     traits = {
-        "diplomatic": 0.9,
+        "diplomatic": 0.2,
         "empathetic": 0.8,
         "conflict_averse": 0.6,
         "socially_aware": 0.85
@@ -150,7 +149,8 @@ def test_complex_social_scenario():
         print(f"- {effect}")
 
     print("\n=== DECISION TREE SUMMARY ===")
-    print("Initial Situation:")
+    print("Initial Situation:" + situation)
+    print(traits)
     print("└── Reasoning:", thought_path.reasoning.replace('\n', '\n    '))
     print("    └── Chosen Action:", thought_path.action.replace('\n', '\n        '))
     print("        └── Expected Next Steps:")
